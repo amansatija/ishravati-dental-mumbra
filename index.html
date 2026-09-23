@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ishravati Dental Clinic | Mumbra, Thane</title>
+  <meta name="description" content="Ishravati Dental Clinic in Sanjay Nagar, Mumbra — care from Dr. Pramod Yadav. Root canal, fillings, implants, braces, pediatric &amp; family dentistry. Call or WhatsApp +91 90041 08343." />
+  <meta name="theme-color" content="#3730a3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #4f46e5;
+      --accent-dark: #3730a3;
+      --ink: #1e1b4b;
+      --muted: #5b5a7a;
+      --bg: #f7f7fc;
+      --card: #fff;
+      --line: #e0e0f0;
+      --soft: #eef2ff;
+      --radius: 18px;
+      --shadow: 0 12px 40px rgba(79,70,229,.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "DM Sans", system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); background: rgba(247,247,252,.92); border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem 0; }
+    .brand { display: flex; align-items: center; gap: .7rem; font-weight: 700; }
+    .logo { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(145deg, var(--accent), #6366f1); color: #fff; display: grid; place-items: center; font-family: Fraunces, serif; }
+    .brand small { display: block; font-weight: 500; color: var(--muted); font-size: .75rem; }
+    .nav-actions { display: flex; gap: .5rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .35rem; border-radius: 999px; padding: .72rem 1.15rem; font-weight: 600; font-size: .92rem; border: 1px solid transparent; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-ghost { background: #fff; border-color: var(--line); }
+    .btn-wa { background: #25d366; color: #fff; }
+    .hero { padding: 3rem 0 2.2rem; display: grid; gap: 2rem; grid-template-columns: 1.15fr .85fr; align-items: center; }
+    .pill { display: inline-flex; background: #e0e7ff; color: var(--accent-dark); padding: .35rem .75rem; border-radius: 999px; font-size: .8rem; font-weight: 600; margin-bottom: 1rem; }
+    h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.15; letter-spacing: -.02em; margin-bottom: 1rem; }
+    .lead { color: var(--muted); font-size: 1.05rem; max-width: 36rem; margin-bottom: 1.4rem; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; margin-bottom: 1.2rem; }
+    .meta { display: grid; gap: .8rem; grid-template-columns: 1fr 1fr; color: var(--muted); font-size: .9rem; }
+    .meta strong { display: block; color: var(--ink); }
+    .hero-card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 1.35rem; box-shadow: var(--shadow); }
+    .hero-card h2 { font-size: 1.05rem; margin-bottom: .85rem; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-bottom: 1rem; }
+    .stat { background: var(--soft); border-radius: 14px; padding: .85rem; }
+    .stat b { display: block; font-size: 1.05rem; color: var(--accent-dark); }
+    .stat span { font-size: .78rem; color: var(--muted); }
+    .hours { list-style: none; font-size: .88rem; color: var(--muted); }
+    .hours li { padding: .22rem 0; }
+    section { padding: 2.3rem 0; }
+    .stitle { font-family: Fraunces, Georgia, serif; font-size: clamp(1.45rem, 3vw, 1.9rem); margin-bottom: .4rem; }
+    .ssub { color: var(--muted); margin-bottom: 1.4rem; max-width: 36rem; }
+    .grid3 { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; }
+    .icon { width: 42px; height: 42px; border-radius: 12px; margin-bottom: .8rem; background: var(--soft); display: grid; place-items: center; }
+    .card h3 { font-size: 1.02rem; margin-bottom: .35rem; }
+    .card p { color: var(--muted); font-size: .92rem; }
+    .docs { display: grid; gap: 1rem; grid-template-columns: 1fr; max-width: 32rem; }
+    .doc { display: flex; gap: 1rem; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.05rem; }
+    .av { width: 64px; height: 64px; border-radius: 18px; flex-shrink: 0; background: linear-gradient(145deg, #c7d2fe, #a5b4fc); display: grid; place-items: center; font-family: Fraunces, serif; font-size: 1.25rem; color: var(--accent-dark); }
+    .doc h3 { font-size: 1.05rem; }
+    .doc p { color: var(--muted); font-size: .88rem; }
+    .band { background: linear-gradient(135deg, var(--accent-dark), var(--accent)); color: #fff; border-radius: 28px; padding: 1.7rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+    .band h2 { font-family: Fraunces, serif; font-size: 1.55rem; }
+    .band p { opacity: .92; margin-top: .3rem; }
+    .band .btn { background: #fff; color: var(--accent-dark); }
+    .map { border-radius: 24px; overflow: hidden; border: 1px solid var(--line); background: #eef2ff; }
+    .map iframe { width: 100%; height: 320px; border: 0; }
+    footer { padding: 2rem 0 2.4rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); margin-top: 1rem; }
+    .foot { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+    .credit a { text-decoration: underline; text-underline-offset: 2px; }
+    .note { margin-top: 1rem; color: var(--muted); font-size: .85rem; }
+    @media (max-width: 840px) {
+      .hero, .grid3, .meta { grid-template-columns: 1fr; }
+      .nav-actions .btn-ghost { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">I</div>
+        <div>
+          Ishravati Dental Clinic
+          <small>Sanjay Nagar · Mumbra, Thane</small>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#services">Services</a>
+        <a class="btn btn-primary" href="tel:+919004108343">Call now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="pill">Mumbra · Family dental care · Easy to reach</div>
+        <h1>Gentle dental care near Adinath Mandir, Sanjay Nagar.</h1>
+        <p class="lead">Ishravati Dental Clinic serves families in Mumbra–Thane under Dr. Pramod Yadav — check-ups, root canals, fillings, braces, implants, and more. Call or WhatsApp to book.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+919004108343">Call +91 90041 08343</a>
+          <a class="btn btn-wa" href="https://wa.me/919004108343" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="meta">
+          <div><strong>Address</strong>Mumbradevi Apt., Bhagat Singh Chawl, near Adinath Mandir, Sanjay Nagar, Mumbra, Thane 400612</div>
+          <div><strong>Hours</strong>Mon–Sat: 10:30–2:30 &amp; 6:00–10:00 · Confirm when you call</div>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>Book without the rush</h2>
+        <div class="stats">
+          <div class="stat"><b>Since 2020</b><span>Clinic founded (per clinic site)</span></div>
+          <div class="stat"><b>Mumbra</b><span>Sanjay Nagar, Thane 400612</span></div>
+          <div class="stat"><b>Call / WA</b><span>+91 90041 08343</span></div>
+          <div class="stat"><b>Family care</b><span>Kids to adults</span></div>
+        </div>
+        <ul class="hours">
+          <li>Mon–Sat morning: 10:30 am – 2:30 pm</li>
+          <li>Mon–Sat evening: 6:00 pm – 10:00 pm</li>
+          <li>Sunday: by appointment (confirm when you call)</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="wrap" id="services">
+      <h2 class="stitle">Dental care for your family</h2>
+      <p class="ssub">Treatments listed on the clinic’s own site — ask the doctor which option fits you best.</p>
+      <div class="grid3">
+        <article class="card"><div class="icon">🦷</div><h3>Check-ups &amp; fillings</h3><p>Routine exams and cosmetic fillings to keep teeth healthy and comfortable day to day.</p></article>
+        <article class="card"><div class="icon">💎</div><h3>Root canal treatment</h3><p>Treat infection inside the tooth, clean thoroughly, and seal it to help save your smile.</p></article>
+        <article class="card"><div class="icon">🔧</div><h3>Dental implants &amp; bridges</h3><p>Replace missing teeth with implants or bridges so you can chew and smile with confidence.</p></article>
+        <article class="card"><div class="icon">✨</div><h3>Whitening &amp; veneers</h3><p>Teeth whitening and porcelain veneers for a brighter, more even-looking smile.</p></article>
+        <article class="card"><div class="icon">😁</div><h3>Braces &amp; alignment</h3><p>Orthodontic braces to help straighten teeth — discuss options when you visit.</p></article>
+        <article class="card"><div class="icon">👶</div><h3>Kids &amp; extractions</h3><p>Pediatric dentistry, wisdom-tooth care, and surgical extractions when needed.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2 class="stitle">Your doctor</h2>
+      <p class="ssub">Head of the clinic in Mumbra–Thane — focused on patient-first care.</p>
+      <div class="docs">
+        <div class="doc">
+          <div class="av">PY</div>
+          <div>
+            <h3>Dr. Pramod Yadav</h3>
+            <p>Head of Clinic · Founded Ishravati Dental Clinic in 2020 · Sanjay Nagar, Mumbra</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="band">
+        <div>
+          <h2>Need an appointment this week?</h2>
+          <p>Call or WhatsApp the clinic — same number patients already use.</p>
+        </div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+          <a class="btn" href="tel:+919004108343">Call +91 90041 08343</a>
+          <a class="btn btn-wa" href="https://wa.me/919004108343" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2 class="stitle">Find us</h2>
+      <p class="ssub">Mumbradevi Apt., Bhagat Singh Chawl, near Adinath Mandir, Sanjay Nagar, Mumbra, Thane, Maharashtra 400612</p>
+      <div class="map">
+        <iframe title="Ishravati Dental Clinic map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Ishravati%20Dental%20Clinic%20Bhagat%20Singh%20Chawl%20Sanjay%20Nagar%20Mumbra%20Thane%20400612&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+      <p class="note">
+        Maps search query (no confirmed Google Place URL found):
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Ishravati%20Dental%20Clinic%20Sanjay%20Nagar%20Mumbra%20Thane" target="_blank" rel="noopener">Open in Google Maps</a>.
+        Hours above are from the clinic’s contact page when it was last indexed — please confirm when you call.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong style="color:var(--ink)">Ishravati Dental Clinic</strong><br />
+        Sanjay Nagar, Mumbra, Thane 400612<br />
+        © <span id="y"></span> All rights reserved.
+      </div>
+      <div class="credit">
+        Draft preview by <a href="https://techeeez.com" target="_blank" rel="noopener">Techeeez</a> · techeeez.com
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
